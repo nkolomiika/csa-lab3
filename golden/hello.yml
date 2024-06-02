@@ -1,0 +1,337 @@
+in_source: |-
+  11 ." Hello, world!"
+in_stdin: |-
+  []
+out_code: |-
+  [{"index": 0, "command": "jmp", "arg": 1},
+  {"index": 1, "command": "push", "arg": 11},
+  {"index": 2, "command": "pop"},
+  {"index": 3, "command": "push", "arg": 13},
+  {"index": 4, "command": "push", "arg": 0},
+  {"index": 5, "command": "store"},
+  {"index": 6, "command": "push", "arg": 72},
+  {"index": 7, "command": "push", "arg": 1},
+  {"index": 8, "command": "store"},
+  {"index": 9, "command": "push", "arg": 101},
+  {"index": 10, "command": "push", "arg": 2},
+  {"index": 11, "command": "store"},
+  {"index": 12, "command": "push", "arg": 108},
+  {"index": 13, "command": "push", "arg": 3},
+  {"index": 14, "command": "store"},
+  {"index": 15, "command": "push", "arg": 108},
+  {"index": 16, "command": "push", "arg": 4},
+  {"index": 17, "command": "store"},
+  {"index": 18, "command": "push", "arg": 111},
+  {"index": 19, "command": "push", "arg": 5},
+  {"index": 20, "command": "store"},
+  {"index": 21, "command": "push", "arg": 44},
+  {"index": 22, "command": "push", "arg": 6},
+  {"index": 23, "command": "store"},
+  {"index": 24, "command": "push", "arg": 32},
+  {"index": 25, "command": "push", "arg": 7},
+  {"index": 26, "command": "store"},
+  {"index": 27, "command": "push", "arg": 119},
+  {"index": 28, "command": "push", "arg": 8},
+  {"index": 29, "command": "store"},
+  {"index": 30, "command": "push", "arg": 111},
+  {"index": 31, "command": "push", "arg": 9},
+  {"index": 32, "command": "store"},
+  {"index": 33, "command": "push", "arg": 114},
+  {"index": 34, "command": "push", "arg": 10},
+  {"index": 35, "command": "store"},
+  {"index": 36, "command": "push", "arg": 108},
+  {"index": 37, "command": "push", "arg": 11},
+  {"index": 38, "command": "store"},
+  {"index": 39, "command": "push", "arg": 100},
+  {"index": 40, "command": "push", "arg": 12},
+  {"index": 41, "command": "store"},
+  {"index": 42, "command": "push", "arg": 33},
+  {"index": 43, "command": "push", "arg": 13},
+  {"index": 44, "command": "store"},
+  {"index": 45, "command": "push", "arg": 0},
+  {"index": 46, "command": "load"},
+  {"index": 47, "command": "push", "arg": 0},
+  {"index": 48, "command": "push", "arg": 1},
+  {"index": 49, "command": "add"},
+  {"index": 50, "command": "over"},
+  {"index": 51, "command": "zjmp", "arg": 63},
+  {"index": 52, "command": "dup"},
+  {"index": 53, "command": "load"},
+  {"index": 54, "command": "rpop"},
+  {"index": 55, "command": "dup"},
+  {"index": 56, "command": "pop"},
+  {"index": 57, "command": "omit"},
+  {"index": 58, "command": "swap"},
+  {"index": 59, "command": "push", "arg": 1},
+  {"index": 60, "command": "sub"},
+  {"index": 61, "command": "swap"},
+  {"index": 62, "command": "jmp", "arg": 48},
+  {"index": 63, "command": "halt"}]
+out_stdout: |
+  source LoC: 1 code instr: 64
+  ============================================================
+  Hello, world!
+  Output: Hello, world!
+  Instruction number: 260
+out_log: |
+  exec_instruction:    1 | PC:   0 | PS_REQ 0 | PS_STATE: 1 | SP:   4 | I:   4 | TEMP:    8877 | DATA_MEMORY[TOP]:    4747 | TOS : [8877, 8877, 8877, 8877, 8877] | RETURN_TOS : [9988, 9988, 9988] 
+  exec_instruction:    2 | PC:   1 | PS_REQ 0 | PS_STATE: 1 | SP:   5 | I:   4 | TEMP:    8877 | DATA_MEMORY[TOP]:    4747 | TOS : [11, 8877, 8877, 8877, 8877] | RETURN_TOS : [9988, 9988, 9988] 
+  exec_instruction:    3 | PC:   2 | PS_REQ 0 | PS_STATE: 1 | SP:   4 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [8877, 8877, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:    4 | PC:   3 | PS_REQ 0 | PS_STATE: 1 | SP:   5 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [13, 8877, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:    5 | PC:   4 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [0, 13, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:    6 | PC:   5 | PS_REQ 0 | PS_STATE: 1 | SP:   4 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [8877, 8877, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:    7 | PC:   6 | PS_REQ 0 | PS_STATE: 1 | SP:   5 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [72, 8877, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:    8 | PC:   7 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [1, 72, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:    9 | PC:   8 | PS_REQ 0 | PS_STATE: 1 | SP:   4 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [8877, 8877, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   10 | PC:   9 | PS_REQ 0 | PS_STATE: 1 | SP:   5 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [101, 8877, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   11 | PC:  10 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [2, 101, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   12 | PC:  11 | PS_REQ 0 | PS_STATE: 1 | SP:   4 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [8877, 8877, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   13 | PC:  12 | PS_REQ 0 | PS_STATE: 1 | SP:   5 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [108, 8877, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   14 | PC:  13 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [3, 108, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   15 | PC:  14 | PS_REQ 0 | PS_STATE: 1 | SP:   4 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [8877, 8877, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   16 | PC:  15 | PS_REQ 0 | PS_STATE: 1 | SP:   5 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [108, 8877, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   17 | PC:  16 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [4, 108, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   18 | PC:  17 | PS_REQ 0 | PS_STATE: 1 | SP:   4 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [8877, 8877, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   19 | PC:  18 | PS_REQ 0 | PS_STATE: 1 | SP:   5 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [111, 8877, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   20 | PC:  19 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [5, 111, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   21 | PC:  20 | PS_REQ 0 | PS_STATE: 1 | SP:   4 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [8877, 8877, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   22 | PC:  21 | PS_REQ 0 | PS_STATE: 1 | SP:   5 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [44, 8877, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   23 | PC:  22 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [6, 44, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   24 | PC:  23 | PS_REQ 0 | PS_STATE: 1 | SP:   4 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [8877, 8877, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   25 | PC:  24 | PS_REQ 0 | PS_STATE: 1 | SP:   5 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [32, 8877, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   26 | PC:  25 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [7, 32, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   27 | PC:  26 | PS_REQ 0 | PS_STATE: 1 | SP:   4 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [8877, 8877, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   28 | PC:  27 | PS_REQ 0 | PS_STATE: 1 | SP:   5 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [119, 8877, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   29 | PC:  28 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [8, 119, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   30 | PC:  29 | PS_REQ 0 | PS_STATE: 1 | SP:   4 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [8877, 8877, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   31 | PC:  30 | PS_REQ 0 | PS_STATE: 1 | SP:   5 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [111, 8877, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   32 | PC:  31 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [9, 111, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   33 | PC:  32 | PS_REQ 0 | PS_STATE: 1 | SP:   4 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [8877, 8877, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   34 | PC:  33 | PS_REQ 0 | PS_STATE: 1 | SP:   5 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [114, 8877, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   35 | PC:  34 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [10, 114, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   36 | PC:  35 | PS_REQ 0 | PS_STATE: 1 | SP:   4 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [8877, 8877, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   37 | PC:  36 | PS_REQ 0 | PS_STATE: 1 | SP:   5 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [108, 8877, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   38 | PC:  37 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [11, 108, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   39 | PC:  38 | PS_REQ 0 | PS_STATE: 1 | SP:   4 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [8877, 8877, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   40 | PC:  39 | PS_REQ 0 | PS_STATE: 1 | SP:   5 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [100, 8877, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   41 | PC:  40 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [12, 100, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   42 | PC:  41 | PS_REQ 0 | PS_STATE: 1 | SP:   4 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [8877, 8877, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   43 | PC:  42 | PS_REQ 0 | PS_STATE: 1 | SP:   5 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [33, 8877, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   44 | PC:  43 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [13, 33, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   45 | PC:  44 | PS_REQ 0 | PS_STATE: 1 | SP:   4 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [8877, 8877, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   46 | PC:  45 | PS_REQ 0 | PS_STATE: 1 | SP:   5 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:      13 | TOS : [0, 8877, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   47 | PC:  46 | PS_REQ 0 | PS_STATE: 1 | SP:   5 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:      33 | TOS : [13, 8877, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   48 | PC:  47 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:      13 | TOS : [0, 13, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   49 | PC:  48 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:      72 | TOS : [1, 0, 13, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   50 | PC:  49 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:      72 | TOS : [1, 13, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   51 | PC:  50 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       1 | DATA_MEMORY[TOP]:      33 | TOS : [13, 1, 13, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   52 | PC:  51 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       1 | DATA_MEMORY[TOP]:      72 | TOS : [1, 1, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   53 | PC:  51 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       1 | DATA_MEMORY[TOP]:      72 | TOS : [1, 13, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   54 | PC:  52 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       1 | DATA_MEMORY[TOP]:      72 | TOS : [1, 1, 13, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   55 | PC:  53 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       1 | DATA_MEMORY[TOP]:    4747 | TOS : [72, 1, 13, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   56 | PC:  54 | PS_REQ 0 | PS_STATE: 1 | SP:   8 | I:   4 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 72, 1, 13, 8877] | RETURN_TOS : [9988, 9988, 9988] 
+  exec_instruction:   57 | PC:  55 | PS_REQ 0 | PS_STATE: 1 | SP:   9 | I:   4 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 11, 72, 1, 13] | RETURN_TOS : [9988, 9988, 9988] 
+  exec_instruction:   58 | PC:  56 | PS_REQ 0 | PS_STATE: 1 | SP:   8 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 72, 1, 13, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   59 | PC:  57 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:      72 | TOS : [1, 13, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   60 | PC:  58 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       1 | DATA_MEMORY[TOP]:      33 | TOS : [13, 1, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   61 | PC:  59 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       1 | DATA_MEMORY[TOP]:      72 | TOS : [1, 13, 1, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   62 | PC:  60 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       1 | DATA_MEMORY[TOP]:     100 | TOS : [12, 1, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   63 | PC:  61 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      12 | DATA_MEMORY[TOP]:      72 | TOS : [1, 12, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   64 | PC:  47 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      12 | DATA_MEMORY[TOP]:      72 | TOS : [1, 12, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   65 | PC:  48 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:      12 | DATA_MEMORY[TOP]:      72 | TOS : [1, 1, 12, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   66 | PC:  49 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      12 | DATA_MEMORY[TOP]:     101 | TOS : [2, 12, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   67 | PC:  50 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       2 | DATA_MEMORY[TOP]:     100 | TOS : [12, 2, 12, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   68 | PC:  51 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       2 | DATA_MEMORY[TOP]:     101 | TOS : [2, 2, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   69 | PC:  51 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       2 | DATA_MEMORY[TOP]:     101 | TOS : [2, 12, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   70 | PC:  52 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       2 | DATA_MEMORY[TOP]:     101 | TOS : [2, 2, 12, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   71 | PC:  53 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       2 | DATA_MEMORY[TOP]:    4747 | TOS : [101, 2, 12, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   72 | PC:  54 | PS_REQ 0 | PS_STATE: 1 | SP:   8 | I:   4 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 101, 2, 12, 8877] | RETURN_TOS : [9988, 9988, 9988] 
+  exec_instruction:   73 | PC:  55 | PS_REQ 0 | PS_STATE: 1 | SP:   9 | I:   4 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 11, 101, 2, 12] | RETURN_TOS : [9988, 9988, 9988] 
+  exec_instruction:   74 | PC:  56 | PS_REQ 0 | PS_STATE: 1 | SP:   8 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 101, 2, 12, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   75 | PC:  57 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:     101 | TOS : [2, 12, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   76 | PC:  58 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       2 | DATA_MEMORY[TOP]:     100 | TOS : [12, 2, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   77 | PC:  59 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       2 | DATA_MEMORY[TOP]:      72 | TOS : [1, 12, 2, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   78 | PC:  60 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       2 | DATA_MEMORY[TOP]:     108 | TOS : [11, 2, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   79 | PC:  61 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:     101 | TOS : [2, 11, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   80 | PC:  47 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:     101 | TOS : [2, 11, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   81 | PC:  48 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:      72 | TOS : [1, 2, 11, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   82 | PC:  49 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [3, 11, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   83 | PC:  50 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       3 | DATA_MEMORY[TOP]:     108 | TOS : [11, 3, 11, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   84 | PC:  51 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       3 | DATA_MEMORY[TOP]:     108 | TOS : [3, 3, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   85 | PC:  51 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       3 | DATA_MEMORY[TOP]:     108 | TOS : [3, 11, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   86 | PC:  52 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       3 | DATA_MEMORY[TOP]:     108 | TOS : [3, 3, 11, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   87 | PC:  53 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       3 | DATA_MEMORY[TOP]:    4747 | TOS : [108, 3, 11, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   88 | PC:  54 | PS_REQ 0 | PS_STATE: 1 | SP:   8 | I:   4 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 108, 3, 11, 8877] | RETURN_TOS : [9988, 9988, 9988] 
+  exec_instruction:   89 | PC:  55 | PS_REQ 0 | PS_STATE: 1 | SP:   9 | I:   4 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 11, 108, 3, 11] | RETURN_TOS : [9988, 9988, 9988] 
+  exec_instruction:   90 | PC:  56 | PS_REQ 0 | PS_STATE: 1 | SP:   8 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 108, 3, 11, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   91 | PC:  57 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [3, 11, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   92 | PC:  58 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       3 | DATA_MEMORY[TOP]:     108 | TOS : [11, 3, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   93 | PC:  59 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       3 | DATA_MEMORY[TOP]:      72 | TOS : [1, 11, 3, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   94 | PC:  60 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       3 | DATA_MEMORY[TOP]:     114 | TOS : [10, 3, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   95 | PC:  61 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      10 | DATA_MEMORY[TOP]:     108 | TOS : [3, 10, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   96 | PC:  47 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      10 | DATA_MEMORY[TOP]:     108 | TOS : [3, 10, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   97 | PC:  48 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:      10 | DATA_MEMORY[TOP]:      72 | TOS : [1, 3, 10, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   98 | PC:  49 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      10 | DATA_MEMORY[TOP]:     108 | TOS : [4, 10, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:   99 | PC:  50 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       4 | DATA_MEMORY[TOP]:     114 | TOS : [10, 4, 10, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  100 | PC:  51 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       4 | DATA_MEMORY[TOP]:     108 | TOS : [4, 4, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  101 | PC:  51 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       4 | DATA_MEMORY[TOP]:     108 | TOS : [4, 10, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  102 | PC:  52 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       4 | DATA_MEMORY[TOP]:     108 | TOS : [4, 4, 10, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  103 | PC:  53 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       4 | DATA_MEMORY[TOP]:    4747 | TOS : [108, 4, 10, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  104 | PC:  54 | PS_REQ 0 | PS_STATE: 1 | SP:   8 | I:   4 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 108, 4, 10, 8877] | RETURN_TOS : [9988, 9988, 9988] 
+  exec_instruction:  105 | PC:  55 | PS_REQ 0 | PS_STATE: 1 | SP:   9 | I:   4 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 11, 108, 4, 10] | RETURN_TOS : [9988, 9988, 9988] 
+  exec_instruction:  106 | PC:  56 | PS_REQ 0 | PS_STATE: 1 | SP:   8 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 108, 4, 10, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  107 | PC:  57 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [4, 10, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  108 | PC:  58 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       4 | DATA_MEMORY[TOP]:     114 | TOS : [10, 4, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  109 | PC:  59 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       4 | DATA_MEMORY[TOP]:      72 | TOS : [1, 10, 4, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  110 | PC:  60 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       4 | DATA_MEMORY[TOP]:     111 | TOS : [9, 4, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  111 | PC:  61 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       9 | DATA_MEMORY[TOP]:     108 | TOS : [4, 9, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  112 | PC:  47 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       9 | DATA_MEMORY[TOP]:     108 | TOS : [4, 9, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  113 | PC:  48 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       9 | DATA_MEMORY[TOP]:      72 | TOS : [1, 4, 9, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  114 | PC:  49 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       9 | DATA_MEMORY[TOP]:     111 | TOS : [5, 9, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  115 | PC:  50 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       5 | DATA_MEMORY[TOP]:     111 | TOS : [9, 5, 9, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  116 | PC:  51 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       5 | DATA_MEMORY[TOP]:     111 | TOS : [5, 5, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  117 | PC:  51 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       5 | DATA_MEMORY[TOP]:     111 | TOS : [5, 9, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  118 | PC:  52 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       5 | DATA_MEMORY[TOP]:     111 | TOS : [5, 5, 9, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  119 | PC:  53 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       5 | DATA_MEMORY[TOP]:    4747 | TOS : [111, 5, 9, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  120 | PC:  54 | PS_REQ 0 | PS_STATE: 1 | SP:   8 | I:   4 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 111, 5, 9, 8877] | RETURN_TOS : [9988, 9988, 9988] 
+  exec_instruction:  121 | PC:  55 | PS_REQ 0 | PS_STATE: 1 | SP:   9 | I:   4 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 11, 111, 5, 9] | RETURN_TOS : [9988, 9988, 9988] 
+  exec_instruction:  122 | PC:  56 | PS_REQ 0 | PS_STATE: 1 | SP:   8 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 111, 5, 9, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  123 | PC:  57 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:     111 | TOS : [5, 9, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  124 | PC:  58 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       5 | DATA_MEMORY[TOP]:     111 | TOS : [9, 5, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  125 | PC:  59 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       5 | DATA_MEMORY[TOP]:      72 | TOS : [1, 9, 5, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  126 | PC:  60 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       5 | DATA_MEMORY[TOP]:     119 | TOS : [8, 5, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  127 | PC:  61 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       8 | DATA_MEMORY[TOP]:     111 | TOS : [5, 8, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  128 | PC:  47 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       8 | DATA_MEMORY[TOP]:     111 | TOS : [5, 8, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  129 | PC:  48 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       8 | DATA_MEMORY[TOP]:      72 | TOS : [1, 5, 8, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  130 | PC:  49 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       8 | DATA_MEMORY[TOP]:      44 | TOS : [6, 8, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  131 | PC:  50 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       6 | DATA_MEMORY[TOP]:     119 | TOS : [8, 6, 8, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  132 | PC:  51 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       6 | DATA_MEMORY[TOP]:      44 | TOS : [6, 6, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  133 | PC:  51 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       6 | DATA_MEMORY[TOP]:      44 | TOS : [6, 8, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  134 | PC:  52 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       6 | DATA_MEMORY[TOP]:      44 | TOS : [6, 6, 8, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  135 | PC:  53 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       6 | DATA_MEMORY[TOP]:    4747 | TOS : [44, 6, 8, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  136 | PC:  54 | PS_REQ 0 | PS_STATE: 1 | SP:   8 | I:   4 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 44, 6, 8, 8877] | RETURN_TOS : [9988, 9988, 9988] 
+  exec_instruction:  137 | PC:  55 | PS_REQ 0 | PS_STATE: 1 | SP:   9 | I:   4 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 11, 44, 6, 8] | RETURN_TOS : [9988, 9988, 9988] 
+  exec_instruction:  138 | PC:  56 | PS_REQ 0 | PS_STATE: 1 | SP:   8 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 44, 6, 8, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  139 | PC:  57 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:      44 | TOS : [6, 8, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  140 | PC:  58 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       6 | DATA_MEMORY[TOP]:     119 | TOS : [8, 6, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  141 | PC:  59 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       6 | DATA_MEMORY[TOP]:      72 | TOS : [1, 8, 6, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  142 | PC:  60 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       6 | DATA_MEMORY[TOP]:      32 | TOS : [7, 6, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  143 | PC:  61 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       7 | DATA_MEMORY[TOP]:      44 | TOS : [6, 7, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  144 | PC:  47 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       7 | DATA_MEMORY[TOP]:      44 | TOS : [6, 7, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  145 | PC:  48 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       7 | DATA_MEMORY[TOP]:      72 | TOS : [1, 6, 7, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  146 | PC:  49 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       7 | DATA_MEMORY[TOP]:      32 | TOS : [7, 7, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  147 | PC:  50 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       7 | DATA_MEMORY[TOP]:      32 | TOS : [7, 7, 7, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  148 | PC:  51 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       7 | DATA_MEMORY[TOP]:      32 | TOS : [7, 7, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  149 | PC:  51 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       7 | DATA_MEMORY[TOP]:      32 | TOS : [7, 7, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  150 | PC:  52 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       7 | DATA_MEMORY[TOP]:      32 | TOS : [7, 7, 7, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  151 | PC:  53 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       7 | DATA_MEMORY[TOP]:    4747 | TOS : [32, 7, 7, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  152 | PC:  54 | PS_REQ 0 | PS_STATE: 1 | SP:   8 | I:   4 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 32, 7, 7, 8877] | RETURN_TOS : [9988, 9988, 9988] 
+  exec_instruction:  153 | PC:  55 | PS_REQ 0 | PS_STATE: 1 | SP:   9 | I:   4 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 11, 32, 7, 7] | RETURN_TOS : [9988, 9988, 9988] 
+  exec_instruction:  154 | PC:  56 | PS_REQ 0 | PS_STATE: 1 | SP:   8 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 32, 7, 7, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  155 | PC:  57 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:      32 | TOS : [7, 7, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  156 | PC:  58 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       7 | DATA_MEMORY[TOP]:      32 | TOS : [7, 7, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  157 | PC:  59 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       7 | DATA_MEMORY[TOP]:      72 | TOS : [1, 7, 7, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  158 | PC:  60 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       7 | DATA_MEMORY[TOP]:      44 | TOS : [6, 7, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  159 | PC:  61 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       6 | DATA_MEMORY[TOP]:      32 | TOS : [7, 6, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  160 | PC:  47 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       6 | DATA_MEMORY[TOP]:      32 | TOS : [7, 6, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  161 | PC:  48 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       6 | DATA_MEMORY[TOP]:      72 | TOS : [1, 7, 6, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  162 | PC:  49 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       6 | DATA_MEMORY[TOP]:     119 | TOS : [8, 6, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  163 | PC:  50 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       8 | DATA_MEMORY[TOP]:      44 | TOS : [6, 8, 6, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  164 | PC:  51 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       8 | DATA_MEMORY[TOP]:     119 | TOS : [8, 8, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  165 | PC:  51 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       8 | DATA_MEMORY[TOP]:     119 | TOS : [8, 6, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  166 | PC:  52 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       8 | DATA_MEMORY[TOP]:     119 | TOS : [8, 8, 6, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  167 | PC:  53 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       8 | DATA_MEMORY[TOP]:    4747 | TOS : [119, 8, 6, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  168 | PC:  54 | PS_REQ 0 | PS_STATE: 1 | SP:   8 | I:   4 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 119, 8, 6, 8877] | RETURN_TOS : [9988, 9988, 9988] 
+  exec_instruction:  169 | PC:  55 | PS_REQ 0 | PS_STATE: 1 | SP:   9 | I:   4 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 11, 119, 8, 6] | RETURN_TOS : [9988, 9988, 9988] 
+  exec_instruction:  170 | PC:  56 | PS_REQ 0 | PS_STATE: 1 | SP:   8 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 119, 8, 6, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  171 | PC:  57 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:     119 | TOS : [8, 6, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  172 | PC:  58 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       8 | DATA_MEMORY[TOP]:      44 | TOS : [6, 8, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  173 | PC:  59 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       8 | DATA_MEMORY[TOP]:      72 | TOS : [1, 6, 8, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  174 | PC:  60 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       8 | DATA_MEMORY[TOP]:     111 | TOS : [5, 8, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  175 | PC:  61 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       5 | DATA_MEMORY[TOP]:     119 | TOS : [8, 5, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  176 | PC:  47 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       5 | DATA_MEMORY[TOP]:     119 | TOS : [8, 5, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  177 | PC:  48 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       5 | DATA_MEMORY[TOP]:      72 | TOS : [1, 8, 5, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  178 | PC:  49 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       5 | DATA_MEMORY[TOP]:     111 | TOS : [9, 5, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  179 | PC:  50 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       9 | DATA_MEMORY[TOP]:     111 | TOS : [5, 9, 5, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  180 | PC:  51 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       9 | DATA_MEMORY[TOP]:     111 | TOS : [9, 9, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  181 | PC:  51 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       9 | DATA_MEMORY[TOP]:     111 | TOS : [9, 5, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  182 | PC:  52 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       9 | DATA_MEMORY[TOP]:     111 | TOS : [9, 9, 5, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  183 | PC:  53 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       9 | DATA_MEMORY[TOP]:    4747 | TOS : [111, 9, 5, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  184 | PC:  54 | PS_REQ 0 | PS_STATE: 1 | SP:   8 | I:   4 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 111, 9, 5, 8877] | RETURN_TOS : [9988, 9988, 9988] 
+  exec_instruction:  185 | PC:  55 | PS_REQ 0 | PS_STATE: 1 | SP:   9 | I:   4 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 11, 111, 9, 5] | RETURN_TOS : [9988, 9988, 9988] 
+  exec_instruction:  186 | PC:  56 | PS_REQ 0 | PS_STATE: 1 | SP:   8 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 111, 9, 5, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  187 | PC:  57 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:     111 | TOS : [9, 5, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  188 | PC:  58 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       9 | DATA_MEMORY[TOP]:     111 | TOS : [5, 9, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  189 | PC:  59 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       9 | DATA_MEMORY[TOP]:      72 | TOS : [1, 5, 9, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  190 | PC:  60 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       9 | DATA_MEMORY[TOP]:     108 | TOS : [4, 9, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  191 | PC:  61 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       4 | DATA_MEMORY[TOP]:     111 | TOS : [9, 4, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  192 | PC:  47 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       4 | DATA_MEMORY[TOP]:     111 | TOS : [9, 4, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  193 | PC:  48 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       4 | DATA_MEMORY[TOP]:      72 | TOS : [1, 9, 4, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  194 | PC:  49 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       4 | DATA_MEMORY[TOP]:     114 | TOS : [10, 4, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  195 | PC:  50 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:      10 | DATA_MEMORY[TOP]:     108 | TOS : [4, 10, 4, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  196 | PC:  51 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      10 | DATA_MEMORY[TOP]:     114 | TOS : [10, 10, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  197 | PC:  51 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      10 | DATA_MEMORY[TOP]:     114 | TOS : [10, 4, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  198 | PC:  52 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:      10 | DATA_MEMORY[TOP]:     114 | TOS : [10, 10, 4, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  199 | PC:  53 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:      10 | DATA_MEMORY[TOP]:    4747 | TOS : [114, 10, 4, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  200 | PC:  54 | PS_REQ 0 | PS_STATE: 1 | SP:   8 | I:   4 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 114, 10, 4, 8877] | RETURN_TOS : [9988, 9988, 9988] 
+  exec_instruction:  201 | PC:  55 | PS_REQ 0 | PS_STATE: 1 | SP:   9 | I:   4 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 11, 114, 10, 4] | RETURN_TOS : [9988, 9988, 9988] 
+  exec_instruction:  202 | PC:  56 | PS_REQ 0 | PS_STATE: 1 | SP:   8 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 114, 10, 4, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  203 | PC:  57 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:     114 | TOS : [10, 4, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  204 | PC:  58 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      10 | DATA_MEMORY[TOP]:     108 | TOS : [4, 10, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  205 | PC:  59 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:      10 | DATA_MEMORY[TOP]:      72 | TOS : [1, 4, 10, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  206 | PC:  60 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      10 | DATA_MEMORY[TOP]:     108 | TOS : [3, 10, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  207 | PC:  61 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       3 | DATA_MEMORY[TOP]:     114 | TOS : [10, 3, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  208 | PC:  47 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       3 | DATA_MEMORY[TOP]:     114 | TOS : [10, 3, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  209 | PC:  48 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       3 | DATA_MEMORY[TOP]:      72 | TOS : [1, 10, 3, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  210 | PC:  49 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       3 | DATA_MEMORY[TOP]:     108 | TOS : [11, 3, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  211 | PC:  50 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [3, 11, 3, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  212 | PC:  51 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 11, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  213 | PC:  51 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 3, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  214 | PC:  52 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 11, 3, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  215 | PC:  53 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:    4747 | TOS : [108, 11, 3, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  216 | PC:  54 | PS_REQ 0 | PS_STATE: 1 | SP:   8 | I:   4 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 108, 11, 3, 8877] | RETURN_TOS : [9988, 9988, 9988] 
+  exec_instruction:  217 | PC:  55 | PS_REQ 0 | PS_STATE: 1 | SP:   9 | I:   4 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 11, 108, 11, 3] | RETURN_TOS : [9988, 9988, 9988] 
+  exec_instruction:  218 | PC:  56 | PS_REQ 0 | PS_STATE: 1 | SP:   8 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 108, 11, 3, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  219 | PC:  57 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 3, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  220 | PC:  58 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [3, 11, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  221 | PC:  59 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:      72 | TOS : [1, 3, 11, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  222 | PC:  60 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:     101 | TOS : [2, 11, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  223 | PC:  61 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       2 | DATA_MEMORY[TOP]:     108 | TOS : [11, 2, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  224 | PC:  47 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       2 | DATA_MEMORY[TOP]:     108 | TOS : [11, 2, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  225 | PC:  48 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       2 | DATA_MEMORY[TOP]:      72 | TOS : [1, 11, 2, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  226 | PC:  49 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       2 | DATA_MEMORY[TOP]:     100 | TOS : [12, 2, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  227 | PC:  50 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:      12 | DATA_MEMORY[TOP]:     101 | TOS : [2, 12, 2, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  228 | PC:  51 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      12 | DATA_MEMORY[TOP]:     100 | TOS : [12, 12, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  229 | PC:  51 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      12 | DATA_MEMORY[TOP]:     100 | TOS : [12, 2, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  230 | PC:  52 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:      12 | DATA_MEMORY[TOP]:     100 | TOS : [12, 12, 2, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  231 | PC:  53 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:      12 | DATA_MEMORY[TOP]:    4747 | TOS : [100, 12, 2, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  232 | PC:  54 | PS_REQ 0 | PS_STATE: 1 | SP:   8 | I:   4 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 100, 12, 2, 8877] | RETURN_TOS : [9988, 9988, 9988] 
+  exec_instruction:  233 | PC:  55 | PS_REQ 0 | PS_STATE: 1 | SP:   9 | I:   4 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 11, 100, 12, 2] | RETURN_TOS : [9988, 9988, 9988] 
+  exec_instruction:  234 | PC:  56 | PS_REQ 0 | PS_STATE: 1 | SP:   8 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 100, 12, 2, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  235 | PC:  57 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:     100 | TOS : [12, 2, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  236 | PC:  58 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      12 | DATA_MEMORY[TOP]:     101 | TOS : [2, 12, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  237 | PC:  59 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:      12 | DATA_MEMORY[TOP]:      72 | TOS : [1, 2, 12, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  238 | PC:  60 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      12 | DATA_MEMORY[TOP]:      72 | TOS : [1, 12, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  239 | PC:  61 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       1 | DATA_MEMORY[TOP]:     100 | TOS : [12, 1, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  240 | PC:  47 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       1 | DATA_MEMORY[TOP]:     100 | TOS : [12, 1, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  241 | PC:  48 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       1 | DATA_MEMORY[TOP]:      72 | TOS : [1, 12, 1, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  242 | PC:  49 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       1 | DATA_MEMORY[TOP]:      33 | TOS : [13, 1, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  243 | PC:  50 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:      13 | DATA_MEMORY[TOP]:      72 | TOS : [1, 13, 1, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  244 | PC:  51 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      13 | DATA_MEMORY[TOP]:      33 | TOS : [13, 13, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  245 | PC:  51 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      13 | DATA_MEMORY[TOP]:      33 | TOS : [13, 1, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  246 | PC:  52 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:      13 | DATA_MEMORY[TOP]:      33 | TOS : [13, 13, 1, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  247 | PC:  53 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:      13 | DATA_MEMORY[TOP]:    4747 | TOS : [33, 13, 1, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  248 | PC:  54 | PS_REQ 0 | PS_STATE: 1 | SP:   8 | I:   4 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 33, 13, 1, 8877] | RETURN_TOS : [9988, 9988, 9988] 
+  exec_instruction:  249 | PC:  55 | PS_REQ 0 | PS_STATE: 1 | SP:   9 | I:   4 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 11, 33, 13, 1] | RETURN_TOS : [9988, 9988, 9988] 
+  exec_instruction:  250 | PC:  56 | PS_REQ 0 | PS_STATE: 1 | SP:   8 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:     108 | TOS : [11, 33, 13, 1, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  251 | PC:  57 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      11 | DATA_MEMORY[TOP]:      33 | TOS : [13, 1, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  252 | PC:  58 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      13 | DATA_MEMORY[TOP]:      72 | TOS : [1, 13, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  253 | PC:  59 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:      13 | DATA_MEMORY[TOP]:      72 | TOS : [1, 1, 13, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  254 | PC:  60 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      13 | DATA_MEMORY[TOP]:      13 | TOS : [0, 13, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  255 | PC:  61 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       0 | DATA_MEMORY[TOP]:      33 | TOS : [13, 0, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  256 | PC:  47 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       0 | DATA_MEMORY[TOP]:      33 | TOS : [13, 0, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  257 | PC:  48 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:       0 | DATA_MEMORY[TOP]:      72 | TOS : [1, 13, 0, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  258 | PC:  49 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:       0 | DATA_MEMORY[TOP]:    4747 | TOS : [14, 0, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  259 | PC:  50 | PS_REQ 0 | PS_STATE: 1 | SP:   7 | I:   5 | TEMP:      14 | DATA_MEMORY[TOP]:      13 | TOS : [0, 14, 0, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  260 | PC:  62 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      14 | DATA_MEMORY[TOP]:    4747 | TOS : [14, 14, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
+  exec_instruction:  261 | PC:  62 | PS_REQ 0 | PS_STATE: 1 | SP:   6 | I:   5 | TEMP:      14 | DATA_MEMORY[TOP]:    4747 | TOS : [14, 0, 8877, 8877, 8877] | RETURN_TOS : [11, 9988, 9988] 
