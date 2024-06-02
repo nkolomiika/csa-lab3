@@ -105,7 +105,7 @@ def write_code(filename: str, code: list[dict]):
         buf = []
         for instr in code:
             buf.append(json.dumps(instr))
-        file.write("[" + ",\n ".join(buf) + "]")
+        file.write("[" + ",\n".join(buf) + "]")
 
 
 def read_code(source_path: str) -> list:
